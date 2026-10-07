@@ -1,0 +1,33 @@
+[project]
+name = "senamhi-var-metereologicas-lima"
+version = "1.0.0"
+description = "Scraper de datos meteorológicos SENAMHI para estaciones EMA de Lima"
+readme = "README.md"
+authors = [
+    { name = "thought-eater", email = "135585422+thought-eater@users.noreply.github.com" },
+    { name = "Dany Daniel Neyra", email = "hi@danyneyra.dev" },
+]
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.14"
+dependencies = [
+    "beautifulsoup4>=4.14",
+    "pydantic>=2.11",
+    "zendriver>=0.14",
+]
+
+[project.scripts]
+senamhi-var-metereologicas-lima = "senamhi_var_metereologicas_lima.scraper:cli"
+
+[project.urls]
+Repository = "https://github.com/thought-eater/senamhi-var-metereologicas-lima"
+"Original project" = "https://github.com/danyneyra/senamhi-scraper"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.16.3",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13"]
+build-backend = "uv_build"

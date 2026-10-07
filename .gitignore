@@ -1,22 +1,14 @@
 # Python
 __pycache__/
+.pytest_cache/
+.ruff_cache/
 *.py[cod]
 *$py.class
 *.so
 .Python
 venv/
 dist/
-.venv
+.venv/
 
 # IDEs
 .vscode/
-
-# Project specific
-downloads/
-temp/
-config.local.py
-
-
-# Logs
-*.log
-logs/
